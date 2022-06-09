@@ -1,0 +1,113 @@
+
+<!-- <div *ngIf="output"> {{ output.appointmentdatedata[0].appointmentDayOfWeek }} </div> -->
+
+<div class="container-fluid" style="margin-top: 80px;">
+  <div class="row" style="text-align: center;">
+
+    <!-- ######################## 1ST COL ############################# -->
+
+    <div class="col-lg-2 hospital" style="margin : 2px 52px;">
+      <div *ngIf="output" style="font-weight: bold;"><i class="fa-solid fa-house-medical"></i>  {{ output.cliniclist[0].clinicname }}</div>
+      <br><div *ngIf="output" style="font-weight: bold;"><i class="fa-solid fa-location-dot"></i>  Location</div>
+     <div *ngIf="output"> {{ output.cliniclist[0].cliniccurrentaddress }}</div>
+     <br><div *ngIf="output" style="font-weight: bold;"><i class="fa-solid fa-calendar-days"></i>  Appointment Date</div>
+         <div *ngIf="output"> {{ output.cliniclist[0].appointmentStartingDate }} - {{ output.cliniclist[0].appointmentEndingDate }}</div>
+
+    </div><br><br>
+
+    <!-- ######################## 2ST COL ############################# -->
+
+
+    <div class="col-lg-2" style="margin : 2px 2px;width: 200px">
+      <div class="day" *ngIf="output"> {{ output.appointmentdatedata[0].appointmentDayOfWeek }} </div>
+      <button class="btn btn-warning button-date" *ngIf="output"> {{ output.appointmentdatedata[0].appointmentDate }}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[0].appointmentstartime }} - {{output.data[0].appointmentendtime}}</button>
+
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[1].appointmentstartime }} - {{output.data[1].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[2].appointmentstartime }} - {{output.data[2].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[3].appointmentstartime }} - {{output.data[3].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[4].appointmentstartime }} - {{output.data[4].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[5].appointmentstartime }} - {{output.data[5].appointmentendtime}}</button>
+      <!-- <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[6].appointmentstartime }} - {{output.data[6].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[7].appointmentstartime }} - {{output.data[7].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[8].appointmentstartime }} - {{output.data[8].appointmentendtime}}</button> -->
+
+      <!-- <button class="btn btn-success button-time" *ngIf="output">{{ output.appointmentdatedata[0].appointmentDate }}</button> -->
+    </div><br>
+
+    <!-- ######################## 3RD COL ############################# -->
+
+
+    <div class="col-lg-2" style="margin : 2px 2px;width: 200px;">
+      <div class="day" *ngIf="output"> {{ output.appointmentdatedata[1].appointmentDayOfWeek }} </div>
+      <button class="btn btn-warning button-date" *ngIf="output"> {{ output.appointmentdatedata[1].appointmentDate }}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[0].appointmentstartime }} - {{output.data[0].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[1].appointmentstartime }} - {{output.data[1].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[2].appointmentstartime }} - {{output.data[2].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[3].appointmentstartime }} - {{output.data[3].appointmentendtime}}</button>
+      <!-- <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[4].appointmentstartime }} - {{output.data[4].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[5].appointmentstartime }} - {{output.data[5].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[6].appointmentstartime }} - {{output.data[6].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[7].appointmentstartime }} - {{output.data[7].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[8].appointmentstartime }} - {{output.data[8].appointmentendtime}}</button>
+      -->
+    </div><br><br>
+
+    <!-- ######################## 4Th COL ############################# -->
+
+
+    <div class="col-lg-2" style="margin : 2px 2px;width: 200px;">
+      <div class="day" *ngIf="output"> {{ output.appointmentdatedata[2].appointmentDayOfWeek }} </div>
+      <button class="btn btn-warning button-date" *ngIf="output"> {{ output.appointmentdatedata[2].appointmentDate }}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[0].appointmentstartime }} - {{output.data[0].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[1].appointmentstartime }} - {{output.data[1].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[2].appointmentstartime }} - {{output.data[2].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[3].appointmentstartime }} - {{output.data[3].appointmentendtime}}</button>
+      <!-- <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[4].appointmentstartime }} - {{output.data[4].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[5].appointmentstartime }} - {{output.data[5].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[6].appointmentstartime }} - {{output.data[6].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[7].appointmentstartime }} - {{output.data[7].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[8].appointmentstartime }} - {{output.data[8].appointmentendtime}}</button> -->
+     
+    </div><br><br>
+
+    <!-- ######################## 5Th COL ############################# -->
+
+
+    <div class="col-lg-2" style="margin : 2px 2px;width: 200px;">
+      <div class="day" *ngIf="output"> {{ output.appointmentdatedata[3].appointmentDayOfWeek }} </div>
+      <button class="btn btn-warning button-date" *ngIf="output"> {{ output.appointmentdatedata[3].appointmentDate }}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[0].appointmentstartime }} - {{output.data[0].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[1].appointmentstartime }} - {{output.data[1].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[2].appointmentstartime }} - {{output.data[2].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[3].appointmentstartime }} - {{output.data[3].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[4].appointmentstartime }} - {{output.data[4].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[5].appointmentstartime }} - {{output.data[5].appointmentendtime}}</button>
+      <!-- <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[6].appointmentstartime }} - {{output.data[6].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[7].appointmentstartime }} - {{output.data[7].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[8].appointmentstartime }} - {{output.data[8].appointmentendtime}}</button> -->
+      
+    </div><br><br>
+
+    <!-- ######################## 6Th COL ############################# -->
+
+
+    <div class="col-lg-2"  style="margin : 2px 2px;width: 200px;">
+      <div class="day" *ngIf="output"> {{ output.appointmentdatedata[4].appointmentDayOfWeek }} </div>
+      <button class="btn btn-warning button-date" *ngIf="output"> {{ output.appointmentdatedata[4].appointmentDate }}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[0].appointmentstartime }} - {{output.data[0].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[1].appointmentstartime }} - {{output.data[1].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[2].appointmentstartime }} - {{output.data[2].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[3].appointmentstartime }} - {{output.data[3].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[4].appointmentstartime }} - {{output.data[4].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[5].appointmentstartime }} - {{output.data[5].appointmentendtime}}</button>
+      <!-- <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[6].appointmentstartime }} - {{output.data[6].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[7].appointmentstartime }} - {{output.data[7].appointmentendtime}}</button>
+      <button class="btn btn-success button-time" *ngIf="output"> {{ output.data[8].appointmentstartime }} - {{output.data[8].appointmentendtime}}</button> -->
+      
+    </div><br><br>
+  </div>
+</div>
+
+<!-- <tr *ngFor="let appointmentdatedata of output">
+  <td>{{appointmentdatedata[0].output}}</td></tr> -->
